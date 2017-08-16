@@ -202,7 +202,7 @@ open class Logger {
             date: date
         )
         
-        queue.async {
+        queue.sync {
             Swift.print(result, separator: "", terminator: "")
         }
     }
